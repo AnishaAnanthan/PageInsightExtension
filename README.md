@@ -22,7 +22,7 @@ Perfect for quickly understanding articles, blogs, or documentation without spen
 ## How to use
 
 1. Open any webpage
-2. Click the Page Insight extension
+2. Click the Page Insight extension icon
 3. Press **Analyze Page**
 4. View the page type, sentiment, and summary instantly
 
