@@ -1,20 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 12px;
-    width: 300px;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    padding: 14px;
+    width: 330px;
+    background: linear-gradient(180deg, #eef2ff, #f9fafb);
+    color: #111827;
+}
+
+/* Header */
+h2 {
+    margin: 0 0 14px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e1b4b;
+    letter-spacing: 0.3px;
+}
+
+/* Button */
 button {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    background: #4f46e5;
+    padding: 11px;
+    margin-bottom: 14px;
+    background: linear-gradient(135deg, #4f46e5, #818cf8);
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+    transition: all 0.15s ease-in-out;
 }
 
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(79, 70, 229, 0.45);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Result Card */
+.result {
+    background: white;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Text */
 .result p {
-    margin: 6px 0;
+    margin: 8px 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.result b {
+    color: #1f2937;
+}
+
+/* Highlight values */
+#type {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+#sentiment {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+/* Summary */
+#summary {
+    margin-top: 8px;
+    font-size: 12.8px;
+    color: #4b5563;
+    background: #f1f5f9;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
