@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Page Insight",
+  "version": "1.0",
+  "description": "Instant AI insights for any public webpage",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
